@@ -1,0 +1,68 @@
+import TicTacToe
+import Quick
+import Nimble
+
+class FullGamesSpec: QuickSpec {
+    override func spec() {
+
+        describe("Playing full games") {
+
+            it("starts in progress") {
+                let game = Game()
+
+                expect(game.currentStatus()).to(equal(GameStatus.InProgress))
+            }
+
+            xit("ends in a draw") {
+                // O | X | X
+                // X | X | O
+                // O | O | X
+                let game = Game()
+
+                game.makeMove(4)
+                game.makeMove(0)
+                game.makeMove(3)
+                game.makeMove(5)
+                game.makeMove(1)
+                game.makeMove(7)
+                game.makeMove(2)
+                game.makeMove(6)
+                game.makeMove(8)
+
+                expect(game.currentStatus()).to(equal(GameStatus.Draw))
+            }
+
+            xit("ends with X winning") {
+                // X | X | X
+                // O | O | _
+                // _ | _ | _
+                let game = Game()
+
+                game.makeMove(0)
+                game.makeMove(3)
+                game.makeMove(1)
+                game.makeMove(4)
+                game.makeMove(2)
+
+                expect(game.currentStatus()).to(equal(GameStatus.PlayerOneWins))
+            }
+
+            xit("ends with O winning") {
+                // X | X | _
+                // O | O | O
+                // _ | _ | X
+                let game = Game()
+
+                game.makeMove(0)
+                game.makeMove(3)
+                game.makeMove(1)
+                game.makeMove(4)
+                game.makeMove(8)
+                game.makeMove(5)
+
+                expect(game.currentStatus()).to(equal(GameStatus.PlayerTwoWins))
+            }
+
+        }
+    }
+}
