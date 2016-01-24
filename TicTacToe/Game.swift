@@ -2,14 +2,17 @@ public class Game {
 
     let board: Board
     var currentToken: PlayerToken
+    var rules: Rules
 
     public init() {
         board = Board()
+        rules = StandardRules()
         currentToken = .X
     }
 
-    public init(board: Board) {
+    public init(board: Board, rules: Rules) {
         self.board = board
+        self.rules = rules
         currentToken = .X
     }
 
@@ -19,7 +22,7 @@ public class Game {
     }
 
     public func currentStatus() -> GameStatus {
-        return .InProgress
+        return rules.determineStatus(board)
     }
 
     private func swapPlayerToken() {

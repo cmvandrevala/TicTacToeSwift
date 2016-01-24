@@ -15,6 +15,9 @@
 		07850EC91C554EE7005E6F00 /* GameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC81C554EE7005E6F00 /* GameSpec.swift */; };
 		07850ECC1C55811A005E6F00 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECB1C55811A005E6F00 /* GameStatus.swift */; };
 		07850ECE1C558125005E6F00 /* PlayerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECD1C558125005E6F00 /* PlayerToken.swift */; };
+		07850ED01C5584F0005E6F00 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECF1C5584F0005E6F00 /* Rules.swift */; };
+		07850ED21C5584F9005E6F00 /* StandardRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ED11C5584F9005E6F00 /* StandardRules.swift */; };
+		07850ED51C558536005E6F00 /* MockRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ED41C558536005E6F00 /* MockRules.swift */; };
 		07EB7C041C55157200E0C948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB7C031C55157200E0C948 /* AppDelegate.swift */; };
 		07EB7C061C55157200E0C948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB7C051C55157200E0C948 /* ViewController.swift */; };
 		07EB7C091C55157200E0C948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB7C071C55157200E0C948 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 		07850EC81C554EE7005E6F00 /* GameSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSpec.swift; sourceTree = "<group>"; };
 		07850ECB1C55811A005E6F00 /* GameStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		07850ECD1C558125005E6F00 /* PlayerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerToken.swift; sourceTree = "<group>"; };
+		07850ECF1C5584F0005E6F00 /* Rules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
+		07850ED11C5584F9005E6F00 /* StandardRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardRules.swift; sourceTree = "<group>"; };
+		07850ED41C558536005E6F00 /* MockRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockRules.swift; sourceTree = "<group>"; };
 		07EB7C001C55157200E0C948 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB7C031C55157200E0C948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07EB7C051C55157200E0C948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,18 @@
 				07850EC61C554B6E005E6F00 /* Game.swift */,
 				07850ECB1C55811A005E6F00 /* GameStatus.swift */,
 				07850ECD1C558125005E6F00 /* PlayerToken.swift */,
+				07850ECF1C5584F0005E6F00 /* Rules.swift */,
+				07850ED11C5584F9005E6F00 /* StandardRules.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		07850ED31C55852A005E6F00 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07850EC01C5516E1005E6F00 /* BoardSpec.swift */,
+				07850EC81C554EE7005E6F00 /* GameSpec.swift */,
+				07850ED41C558536005E6F00 /* MockRules.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -123,11 +141,10 @@
 		07EB7C171C55157300E0C948 /* TicTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
+				07850ED31C55852A005E6F00 /* Core */,
 				07EB7C181C55157300E0C948 /* TicTacToeTests.swift */,
 				07EB7C1A1C55157300E0C948 /* Info.plist */,
-				07850EC01C5516E1005E6F00 /* BoardSpec.swift */,
 				07850EC41C554B0B005E6F00 /* FullGamesSpec.swift */,
-				07850EC81C554EE7005E6F00 /* GameSpec.swift */,
 			);
 			path = TicTacToeTests;
 			sourceTree = "<group>";
@@ -303,9 +320,11 @@
 			files = (
 				07EB7C061C55157200E0C948 /* ViewController.swift in Sources */,
 				07EB7C041C55157200E0C948 /* AppDelegate.swift in Sources */,
+				07850ED21C5584F9005E6F00 /* StandardRules.swift in Sources */,
 				07850ECC1C55811A005E6F00 /* GameStatus.swift in Sources */,
 				07850EC31C551749005E6F00 /* Board.swift in Sources */,
 				07850ECE1C558125005E6F00 /* PlayerToken.swift in Sources */,
+				07850ED01C5584F0005E6F00 /* Rules.swift in Sources */,
 				07850EC71C554B6E005E6F00 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07850ED51C558536005E6F00 /* MockRules.swift in Sources */,
 				07850EC51C554B0B005E6F00 /* FullGamesSpec.swift in Sources */,
 				07EB7C191C55157300E0C948 /* TicTacToeTests.swift in Sources */,
 				07850EC91C554EE7005E6F00 /* GameSpec.swift in Sources */,
