@@ -47,7 +47,7 @@ class FullGamesSpec: QuickSpec {
                 expect(game.currentStatus()).to(equal(GameStatus.PlayerOneWins))
             }
 
-            xit("ends with O winning") {
+            it("ends with O winning") {
                 // X | X | _
                 // O | O | O
                 // _ | _ | X

@@ -99,6 +99,7 @@
 		07850ED31C55852A005E6F00 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				07850EC41C554B0B005E6F00 /* FullGamesSpec.swift */,
 				07850EC01C5516E1005E6F00 /* BoardSpec.swift */,
 				07850EC81C554EE7005E6F00 /* GameSpec.swift */,
 				07850ED41C558536005E6F00 /* MockRules.swift */,
@@ -147,7 +148,6 @@
 				07850ED31C55852A005E6F00 /* Core */,
 				07EB7C181C55157300E0C948 /* TicTacToeTests.swift */,
 				07EB7C1A1C55157300E0C948 /* Info.plist */,
-				07850EC41C554B0B005E6F00 /* FullGamesSpec.swift */,
 			);
 			path = TicTacToeTests;
 			sourceTree = "<group>";
