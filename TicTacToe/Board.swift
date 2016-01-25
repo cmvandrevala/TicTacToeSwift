@@ -23,16 +23,26 @@ public class Board {
     }
 
     public func rows() -> [[PlayerToken]] {
-        return [tokensAt(0, 1, 2)]
+        return [
+            tokensAt(0, 1, 2),
+            tokensAt(3, 4, 5),
+            tokensAt(6, 7, 8)
+        ]
     }
 
     public func cols() -> [[PlayerToken]] {
-        return [tokensAt(0, 3, 6)]
+        return [
+            tokensAt(0, 3, 6),
+            tokensAt(1, 4, 7),
+            tokensAt(2, 5, 8)
+        ]
     }
 
     public func diagonals() -> [[PlayerToken]] {
-        return [tokensAt(0, 4, 8)]
-
+        return [
+            tokensAt(0, 4, 8),
+            tokensAt(2, 4, 6)
+        ]
     }
 
     private func filledSpaces() -> [PlayerToken] {
