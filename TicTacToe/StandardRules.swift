@@ -1,7 +1,7 @@
 public class StandardRules: Rules {
 
     public init() {}
-    
+
     public func determineStatus(board: Board) -> GameStatus {
         if (hasWinner(board, playerToken: .X)) {
             return .PlayerOneWins

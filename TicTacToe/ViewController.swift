@@ -1,25 +1,15 @@
-//
-//  ViewController.swift
-//  TicTacToe
-//
-//  Created by Eric Meyer on 1/24/16.
-//  Copyright © 2016 Eric Meyer. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public var gameRunner: GameRunner?
+
+    override public func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        gameRunner = DefaultGameRunner()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction public func takeTurn(sender: AnyObject) {
+        gameRunner?.takeTurn(sender.tag)
     }
-
-
 }
-

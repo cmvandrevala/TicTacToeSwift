@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0497E9BAC84F674C32E73256 /* Pods_TicTacToeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC047F59A0650907BFC4B0CD /* Pods_TicTacToeTests.framework */; };
+		075171071C55BA3D00E09FC2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075171061C55BA3D00E09FC2 /* ViewControllerSpec.swift */; };
+		075171091C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075171081C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift */; };
+		0751710B1C55BCF900E09FC2 /* GameRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751710A1C55BCF900E09FC2 /* GameRunner.swift */; };
+		0751710D1C5660EF00E09FC2 /* DefaultGameRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751710C1C5660EF00E09FC2 /* DefaultGameRunner.swift */; };
 		07850EC11C5516E1005E6F00 /* BoardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC01C5516E1005E6F00 /* BoardSpec.swift */; };
 		07850EC31C551749005E6F00 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC21C551749005E6F00 /* Board.swift */; };
 		07850EC51C554B0B005E6F00 /* FullGamesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC41C554B0B005E6F00 /* FullGamesSpec.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075171061C55BA3D00E09FC2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		075171081C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameRunnerSpec.swift; sourceTree = "<group>"; };
+		0751710A1C55BCF900E09FC2 /* GameRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRunner.swift; sourceTree = "<group>"; };
+		0751710C1C5660EF00E09FC2 /* DefaultGameRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultGameRunner.swift; sourceTree = "<group>"; };
 		07850EC01C5516E1005E6F00 /* BoardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSpec.swift; sourceTree = "<group>"; };
 		07850EC21C551749005E6F00 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		07850EC41C554B0B005E6F00 /* FullGamesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullGamesSpec.swift; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 				07850ECD1C558125005E6F00 /* PlayerToken.swift */,
 				07850ECF1C5584F0005E6F00 /* Rules.swift */,
 				07850ED11C5584F9005E6F00 /* StandardRules.swift */,
+				0751710A1C55BCF900E09FC2 /* GameRunner.swift */,
+				0751710C1C5660EF00E09FC2 /* DefaultGameRunner.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -104,6 +114,7 @@
 				07850EC81C554EE7005E6F00 /* GameSpec.swift */,
 				07850ED41C558536005E6F00 /* MockRules.swift */,
 				07850ED61C55863B005E6F00 /* StandardRulesSpec.swift */,
+				075171081C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -148,6 +159,7 @@
 				07850ED31C55852A005E6F00 /* Core */,
 				07EB7C181C55157300E0C948 /* TicTacToeTests.swift */,
 				07EB7C1A1C55157300E0C948 /* Info.plist */,
+				075171061C55BA3D00E09FC2 /* ViewControllerSpec.swift */,
 			);
 			path = TicTacToeTests;
 			sourceTree = "<group>";
@@ -321,8 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0751710B1C55BCF900E09FC2 /* GameRunner.swift in Sources */,
 				07EB7C061C55157200E0C948 /* ViewController.swift in Sources */,
 				07EB7C041C55157200E0C948 /* AppDelegate.swift in Sources */,
+				0751710D1C5660EF00E09FC2 /* DefaultGameRunner.swift in Sources */,
 				07850ED21C5584F9005E6F00 /* StandardRules.swift in Sources */,
 				07850ECC1C55811A005E6F00 /* GameStatus.swift in Sources */,
 				07850EC31C551749005E6F00 /* Board.swift in Sources */,
@@ -337,10 +351,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				07850ED71C55863B005E6F00 /* StandardRulesSpec.swift in Sources */,
+				075171071C55BA3D00E09FC2 /* ViewControllerSpec.swift in Sources */,
 				07850ED51C558536005E6F00 /* MockRules.swift in Sources */,
 				07850EC51C554B0B005E6F00 /* FullGamesSpec.swift in Sources */,
 				07EB7C191C55157300E0C948 /* TicTacToeTests.swift in Sources */,
 				07850EC91C554EE7005E6F00 /* GameSpec.swift in Sources */,
+				075171091C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift in Sources */,
 				07850EC11C5516E1005E6F00 /* BoardSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
