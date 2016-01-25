@@ -47,7 +47,7 @@ class FullGamesSpec: QuickSpec {
                 expect(game.currentStatus()).to(equal(GameStatus.PlayerOneWins))
             }
 
-            it("ends with O winning") {
+            it("ends with O winning in a row") {
                 // X | X | _
                 // O | O | O
                 // _ | _ | X
@@ -61,6 +61,21 @@ class FullGamesSpec: QuickSpec {
                 game.makeMove(5)
 
                 expect(game.currentStatus()).to(equal(GameStatus.PlayerTwoWins))
+            }
+
+            it("ends with X winning in a diagonal") {
+                // O | O | X
+                // _ | X | _
+                // X | _ | _
+                let game = Game()
+
+                game.makeMove(4)
+                game.makeMove(0)
+                game.makeMove(6)
+                game.makeMove(1)
+                game.makeMove(2)
+
+                expect(game.currentStatus()).to(equal(GameStatus.PlayerOneWins))
             }
 
         }
