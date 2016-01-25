@@ -40,6 +40,27 @@ class BoardSpec: QuickSpec {
                 expect(board.tokenAt(3)).to(equal(PlayerToken.Empty))
             }
         }
+
+        describe("Whether or not the board is full") {
+            it("is full when all spaces are taken") {
+                let board = Board()
+                for position in 0...8 {
+                    board.place(.X, at: position)
+                }
+
+                expect(board.isFull()).to(beTrue())
+            }
+
+            it("does not include empty spaces") {
+                let board = Board()
+                for position in 0...8 {
+                    board.place(.X, at: position)
+                }
+                board.place(.Empty, at: 4)
+
+                expect(board.isFull()).to(beFalse())
+            }
+        }
     }
     
 }

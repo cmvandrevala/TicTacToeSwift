@@ -13,7 +13,7 @@ class FullGamesSpec: QuickSpec {
                 expect(game.currentStatus()).to(equal(GameStatus.InProgress))
             }
 
-            xit("ends in a draw") {
+            it("ends in a draw") {
                 // O | X | X
                 // X | X | O
                 // O | O | X
@@ -32,7 +32,7 @@ class FullGamesSpec: QuickSpec {
                 expect(game.currentStatus()).to(equal(GameStatus.Draw))
             }
 
-            xit("ends with X winning") {
+            it("ends with X winning") {
                 // X | X | X
                 // O | O | _
                 // _ | _ | _
