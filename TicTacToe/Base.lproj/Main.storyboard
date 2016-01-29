@@ -83,6 +83,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outletCollection property="positionButtons" destination="B60-jQ-g7E" collectionClass="NSMutableArray" id="wV8-DZ-HCf"/>
+                        <outletCollection property="positionButtons" destination="Nyg-bP-Ca5" collectionClass="NSMutableArray" id="urk-XW-yle"/>
+                        <outletCollection property="positionButtons" destination="RLW-iu-a1x" collectionClass="NSMutableArray" id="u8G-Wb-ixU"/>
+                        <outletCollection property="positionButtons" destination="uE2-GK-S3Z" collectionClass="NSMutableArray" id="WPD-xP-FQW"/>
+                        <outletCollection property="positionButtons" destination="wNs-b1-qkf" collectionClass="NSMutableArray" id="dnA-Ha-4EL"/>
+                        <outletCollection property="positionButtons" destination="I0l-bw-iXk" collectionClass="NSMutableArray" id="Esj-gz-toF"/>
+                        <outletCollection property="positionButtons" destination="0bK-Gh-8hL" collectionClass="NSMutableArray" id="zmF-oF-Fkd"/>
+                        <outletCollection property="positionButtons" destination="Swl-WS-k4v" collectionClass="NSMutableArray" id="w2j-p8-6wc"/>
+                        <outletCollection property="positionButtons" destination="ByD-fP-XNi" collectionClass="NSMutableArray" id="ED1-H8-fmM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

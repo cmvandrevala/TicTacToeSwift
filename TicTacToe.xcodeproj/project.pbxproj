@@ -29,6 +29,7 @@
 		07EB7C0B1C55157200E0C948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB7C0A1C55157200E0C948 /* Assets.xcassets */; };
 		07EB7C0E1C55157200E0C948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB7C0C1C55157200E0C948 /* LaunchScreen.storyboard */; };
 		07EB7C191C55157300E0C948 /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB7C181C55157300E0C948 /* TicTacToeTests.swift */; };
+		07F003E41C5BAD0100AA626E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F003E31C5BAD0100AA626E /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		07EB7C141C55157300E0C948 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB7C181C55157300E0C948 /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		07EB7C1A1C55157300E0C948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F003E31C5BAD0100AA626E /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		2A19B563D9850DBBE3573DBE /* Pods-TicTacToeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1DB3C3DD81A0AB15846C15 /* Pods-TicTacToeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC047F59A0650907BFC4B0CD /* Pods_TicTacToeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 				07850ED11C5584F9005E6F00 /* StandardRules.swift */,
 				0751710A1C55BCF900E09FC2 /* GameRunner.swift */,
 				0751710C1C5660EF00E09FC2 /* DefaultGameRunner.swift */,
+				07F003E31C5BAD0100AA626E /* GameView.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				07EB7C041C55157200E0C948 /* AppDelegate.swift in Sources */,
 				0751710D1C5660EF00E09FC2 /* DefaultGameRunner.swift in Sources */,
 				07850ED21C5584F9005E6F00 /* StandardRules.swift in Sources */,
+				07F003E41C5BAD0100AA626E /* GameView.swift in Sources */,
 				07850ECC1C55811A005E6F00 /* GameStatus.swift in Sources */,
 				07850EC31C551749005E6F00 /* Board.swift in Sources */,
 				07850ECE1C558125005E6F00 /* PlayerToken.swift in Sources */,
