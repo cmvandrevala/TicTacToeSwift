@@ -26,7 +26,6 @@
 		078523061C5D1BEC00E4AC4D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078523041C5D1BEC00E4AC4D /* Interface.storyboard */; };
 		078523081C5D1BEC00E4AC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078523071C5D1BEC00E4AC4D /* Assets.xcassets */; };
 		0785230F1C5D1BEC00E4AC4D /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0785230E1C5D1BEC00E4AC4D /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		078523141C5D1BEC00E4AC4D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078523131C5D1BEC00E4AC4D /* InterfaceController.swift */; };
 		078523161C5D1BEC00E4AC4D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */; };
 		078523181C5D1BEC00E4AC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078523171C5D1BEC00E4AC4D /* Assets.xcassets */; };
 		0785231C1C5D1BEC00E4AC4D /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 078523021C5D1BEC00E4AC4D /* Watch.app */; };
@@ -109,7 +108,6 @@
 		078523071C5D1BEC00E4AC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078523091C5D1BEC00E4AC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0785230E1C5D1BEC00E4AC4D /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		078523131C5D1BEC00E4AC4D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		078523171C5D1BEC00E4AC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078523191C5D1BEC00E4AC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 		078523121C5D1BEC00E4AC4D /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				078523131C5D1BEC00E4AC4D /* InterfaceController.swift */,
 				078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */,
 				078523171C5D1BEC00E4AC4D /* Assets.xcassets */,
 				078523191C5D1BEC00E4AC4D /* Info.plist */,
@@ -485,7 +482,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				078523161C5D1BEC00E4AC4D /* ExtensionDelegate.swift in Sources */,
-				078523141C5D1BEC00E4AC4D /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
