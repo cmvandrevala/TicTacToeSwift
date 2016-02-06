@@ -35,15 +35,6 @@ class DefaultGameRunnerSpec: QuickSpec {
     
     override func spec() {
 
-        describe("DefaultGameRunner") {
-
-            it("exists") {
-                let runner = DefaultGameRunner(view: MockGameView())
-                expect(runner).notTo(beNil())
-            }
-
-        }
-
         describe("Taking a turn") {
 
             it("makes the given move") {

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0497E9BAC84F674C32E73256 /* Pods_TicTacToeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC047F59A0650907BFC4B0CD /* Pods_TicTacToeTests.framework */; };
+		074BA0B21C659DD700CEA768 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC61C554B6E005E6F00 /* Game.swift */; };
+		074BA0B31C659DD800CEA768 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECB1C55811A005E6F00 /* GameStatus.swift */; };
+		074BA0B41C659DD800CEA768 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECF1C5584F0005E6F00 /* Rules.swift */; };
+		074BA0B51C659DD800CEA768 /* StandardRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ED11C5584F9005E6F00 /* StandardRules.swift */; };
+		074BA0B61C659DD800CEA768 /* GameRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751710A1C55BCF900E09FC2 /* GameRunner.swift */; };
+		074BA0B71C659DD800CEA768 /* DefaultGameRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751710C1C5660EF00E09FC2 /* DefaultGameRunner.swift */; };
+		074BA0B81C659DD800CEA768 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F003E31C5BAD0100AA626E /* GameView.swift */; };
 		075171071C55BA3D00E09FC2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075171061C55BA3D00E09FC2 /* ViewControllerSpec.swift */; };
 		075171091C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075171081C55BA6200E09FC2 /* DefaultGameRunnerSpec.swift */; };
 		0751710B1C55BCF900E09FC2 /* GameRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0751710A1C55BCF900E09FC2 /* GameRunner.swift */; };
@@ -29,6 +36,9 @@
 		078523161C5D1BEC00E4AC4D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */; };
 		078523181C5D1BEC00E4AC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078523171C5D1BEC00E4AC4D /* Assets.xcassets */; };
 		0785231C1C5D1BEC00E4AC4D /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 078523021C5D1BEC00E4AC4D /* Watch.app */; };
+		078523281C5D1CA100E4AC4D /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078523271C5D1CA100E4AC4D /* GameInterfaceController.swift */; };
+		078523291C5D1CAD00E4AC4D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850EC21C551749005E6F00 /* Board.swift */; };
+		0785232A1C5D1CB400E4AC4D /* PlayerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07850ECD1C558125005E6F00 /* PlayerToken.swift */; };
 		07EB7C041C55157200E0C948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB7C031C55157200E0C948 /* AppDelegate.swift */; };
 		07EB7C061C55157200E0C948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB7C051C55157200E0C948 /* ViewController.swift */; };
 		07EB7C091C55157200E0C948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB7C071C55157200E0C948 /* Main.storyboard */; };
@@ -111,6 +121,7 @@
 		078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		078523171C5D1BEC00E4AC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078523191C5D1BEC00E4AC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078523271C5D1CA100E4AC4D /* GameInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
 		07EB7C001C55157200E0C948 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB7C031C55157200E0C948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07EB7C051C55157200E0C948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +209,7 @@
 				078523151C5D1BEC00E4AC4D /* ExtensionDelegate.swift */,
 				078523171C5D1BEC00E4AC4D /* Assets.xcassets */,
 				078523191C5D1BEC00E4AC4D /* Info.plist */,
+				078523271C5D1CA100E4AC4D /* GameInterfaceController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -481,7 +493,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074BA0B61C659DD800CEA768 /* GameRunner.swift in Sources */,
 				078523161C5D1BEC00E4AC4D /* ExtensionDelegate.swift in Sources */,
+				074BA0B31C659DD800CEA768 /* GameStatus.swift in Sources */,
+				074BA0B71C659DD800CEA768 /* DefaultGameRunner.swift in Sources */,
+				074BA0B51C659DD800CEA768 /* StandardRules.swift in Sources */,
+				074BA0B81C659DD800CEA768 /* GameView.swift in Sources */,
+				074BA0B21C659DD700CEA768 /* Game.swift in Sources */,
+				078523281C5D1CA100E4AC4D /* GameInterfaceController.swift in Sources */,
+				0785232A1C5D1CB400E4AC4D /* PlayerToken.swift in Sources */,
+				074BA0B41C659DD800CEA768 /* Rules.swift in Sources */,
+				078523291C5D1CAD00E4AC4D /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +789,7 @@
 				078523201C5D1BEC00E4AC4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		078523231C5D1BEC00E4AC4D /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +798,7 @@
 				0785231E1C5D1BEC00E4AC4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07EB7BFB1C55157200E0C948 /* Build configuration list for PBXProject "TicTacToe" */ = {
 			isa = XCConfigurationList;
