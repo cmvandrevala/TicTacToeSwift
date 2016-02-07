@@ -1,15 +1,14 @@
 public class DefaultGameRunner: GameRunner {
 
-    let board: Board
-    let rules: Rules
+    var board: Board
+    let rules = StandardRules()
     var currentToken: PlayerToken
     public var view: GameView
 
     public init(view: GameView) {
-        board = Board()
-        rules = StandardRules()
-        currentToken = .X
         self.view = view
+        board = Board()
+        currentToken = .X
     }
 
     public func takeTurn(position: Int) {
@@ -19,6 +18,11 @@ public class DefaultGameRunner: GameRunner {
 
     public func tokenAt(position: Int) -> PlayerToken {
         return board.tokenAt(position)
+    }
+
+    public func resetGame() {
+        board = Board()
+        currentToken = .X
     }
 
     private func makeMove(position:Int) {

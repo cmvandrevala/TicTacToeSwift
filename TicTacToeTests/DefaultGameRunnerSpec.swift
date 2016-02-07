@@ -121,6 +121,29 @@ class DefaultGameRunnerSpec: QuickSpec {
 
         }
 
+        describe("Resetting the game") {
+
+            it("clears the board") {
+                let runner = DefaultGameRunner(view: MockGameView())
+                runner.takeTurn(4)
+
+                runner.resetGame()
+
+                expect(runner.tokenAt(4)).to(equal(PlayerToken.Empty))
+            }
+
+            it("makes it X's turn") {
+                let runner = DefaultGameRunner(view: MockGameView())
+                runner.takeTurn(4)
+
+                runner.resetGame()
+                runner.takeTurn(5)
+
+                expect(runner.tokenAt(5)).to(equal(PlayerToken.X))
+            }
+
+        }
+
     }
 
 }
