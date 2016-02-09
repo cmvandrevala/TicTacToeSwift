@@ -32,20 +32,37 @@ class GameInterfaceController: WKInterfaceController, GameView {
             buttonEight
         ]
         gameRunner = DefaultGameRunner(view: self)
+        setPrompt("X's Turn")
+    }
+
+    @IBAction func resetGame() {
+        gameRunner?.resetGame()
+        buttons.forEach {
+            $0.setEnabled(true)
+            $0.setTitle("-")
+        }
+        setPrompt("X's Turn")
     }
 
     func positionWasTaken(position position: Int, token: PlayerToken) {
         let button = buttons[position]
         button.setTitle("\(token)")
         button.setEnabled(false)
+        if token == .X {
+            setPrompt("O's Turn")
+        } else {
+            setPrompt("X's Turn")
+        }
     }
 
     func gameEndedInWin(token token: PlayerToken) {
-        gamePrompt.setText("\(token) Wins!")
+        setPrompt("\(token) Wins!")
+        buttons.forEach { $0.setEnabled(false) }
     }
 
     func gameEndedInDraw() {
-        gamePrompt.setText("Draw!")
+        setPrompt("Draw!")
+        buttons.forEach { $0.setEnabled(false) }
     }
 
     @IBAction func moveZero() {
@@ -82,6 +99,10 @@ class GameInterfaceController: WKInterfaceController, GameView {
 
     @IBAction func moveEight() {
         gameRunner?.takeTurn(8)
+    }
+
+    private func setPrompt(message: String) {
+        gamePrompt.setText(message)
     }
 
 }

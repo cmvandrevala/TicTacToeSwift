@@ -17,6 +17,8 @@ class MockGameRunner: GameRunner {
         givenPosition = position
     }
 
+    func resetGame() {}
+
 }
 class ViewControllerSpec: QuickSpec {
     override func setUp() {

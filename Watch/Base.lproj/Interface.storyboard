@@ -10,7 +10,16 @@
             <objects>
                 <controller id="7me-YA-aTt" customClass="GameInterfaceController" customModule="Watch_Extension">
                     <items>
-                        <label alignment="center" text="Game Prompt" id="dSN-6o-I3J"/>
+                        <group width="1" alignment="left" id="0WH-pQ-l8b">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Game Prompt" id="dSN-6o-I3J"/>
+                                <button alignment="right" verticalAlignment="center" title="X" id="hTb-TP-Bdt">
+                                    <connections>
+                                        <action selector="resetGame" destination="7me-YA-aTt" id="Fj8-zs-afh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                         <group width="1" alignment="left" id="f77-uq-OQb">
                             <items>
                                 <button width="0.33000000000000002" alignment="left" title="-" id="SfJ-Se-iW9">
